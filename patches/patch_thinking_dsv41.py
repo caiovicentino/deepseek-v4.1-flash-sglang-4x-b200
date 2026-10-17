@@ -1,4 +1,4 @@
-"""cbmachine 17/10/2026: make SGLang's DSv4.1 encoder and reasoning parser use ONE thinking rule.
+"""2026-10-17: make SGLang's DSv4.1 encoder and reasoning parser use ONE thinking rule.
 
 Measured on the nightly-dev-cu13-20261016 image: with SGLANG_DEFAULT_THINKING=1 and a request that does not say
 anything about thinking, the encoder renders a thinking prompt (serving_chat._apply_jinja_template reads the env
@@ -30,7 +30,7 @@ new_par = '''        if not self.reasoning_parser:
 helper = '''
 
 def _cb_thinking_requested(request) -> bool:
-    """cbmachine 17/10/2026: one thinking rule for the DSv4.1 encoder and the reasoning parser. `thinking` wins;
+    """2026-10-17: one thinking rule for the DSv4.1 encoder and the reasoning parser. `thinking` wins;
     GLM-era clients send `enable_thinking`, accepted as an alias; otherwise the server default."""
     kw = request.chat_template_kwargs or {}
     if "thinking" in kw:
