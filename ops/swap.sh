@@ -5,7 +5,7 @@
 #
 # 1. stops whatever SGLang runs (by PID), waits until the GPUs are really free (the memory lags the process exit);
 # 2. launches serve/serve.sh detached, logging to $LOG;
-# 3. waits for /health = 200 (first boot ~17 min with FlashInfer autotuning, then ~7 min);
+# 3. waits for /health = 200 (first boot ~17 min with FlashInfer autotuning, then 3.3-4.4 min);
 # 4. if it dies or does not become healthy in BOOT_S seconds and ROLLBACK is set, runs ROLLBACK.
 # Pause your restart watchdog first (ours skips everything while /root/MANUTENCAO exists).
 # Then run tests/val_dsv41.py and tests/val_leak.py before letting the watchdog back.

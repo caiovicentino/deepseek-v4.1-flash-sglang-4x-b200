@@ -1,0 +1,1477 @@
+{
+ "protocol": "docs/results.md section 2 (written 2026-10-17, before the data)",
+ "generated_from": "2026-10-18T11:45:45Z",
+ "windows": {
+  "dsv41": {
+   "label": "DeepSeek-V4.1-Flash-1017",
+   "t0": "2026-10-17 11:21:00",
+   "t1": "2026-10-18 11:21:00",
+   "gaps": [
+    [
+     "2026-10-17 17:23:48",
+     "2026-10-17 17:40:01",
+     "container restarted by an external SIGTERM; the boot script started an old GLM build, which served 17:30-17:36 UTC (excluded); DeepSeek ready again 17:40:01"
+    ],
+    [
+     "2026-10-17 18:03:03",
+     "2026-10-17 18:08:14",
+     "planned restart: HTTP bound to 127.0.0.1 behind the tunnel, log filter"
+    ]
+   ],
+   "pids": [
+    2605212,
+    5046,
+    11222
+   ],
+   "max_running": 64,
+   "logs": [
+    "/root/dsv41.log.pre-20261017-173443",
+    "/root/dsv41.log.pre-20261017-180303",
+    "/root/dsv41.log"
+   ]
+  },
+  "glm_v36": {
+   "label": "GLM-5.3-Flash v3.6 (most recent full 24 h before the swap)",
+   "t0": "2026-10-16 10:49:35",
+   "t1": "2026-10-17 10:49:35",
+   "gaps": [],
+   "pids": [
+    2388313
+   ],
+   "max_running": 96,
+   "logs": [
+    "/root/glm.log.1",
+    "/root/glm.log.pre-dsv41-20261017-104935"
+   ]
+  },
+  "glm_v36_prev": {
+   "label": "GLM-5.3-Flash v3.6 (the 24 h before that, for day-to-day variation)",
+   "t0": "2026-10-15 10:49:35",
+   "t1": "2026-10-16 10:49:35",
+   "gaps": [],
+   "pids": [
+    2388313
+   ],
+   "max_running": 96,
+   "logs": [
+    "/root/glm.log.1"
+   ]
+  }
+ },
+ "1_decode_per_user_tok_s": {
+  "1": {
+   "dsv41": {
+    "lines": 53731,
+    "share_of_decode_lines": 0.3079,
+    "per_user_p50_all": 510.4,
+    "per_user_mean_all": 546.8,
+    "per_user_p10_all": 204.7,
+    "per_user_p90_all": 861.8,
+    "lines_clean": 40385,
+    "per_user_p50_clean": 560.3,
+    "kv_tokens_per_running_req_p50": 68352.0
+   },
+   "glm_v36": {
+    "lines": 3938,
+    "share_of_decode_lines": 0.0512,
+    "per_user_p50_all": 263.7,
+    "per_user_mean_all": 280.1,
+    "per_user_p10_all": 167.3,
+    "per_user_p90_all": 426.7,
+    "lines_clean": 3242,
+    "per_user_p50_clean": 273.5,
+    "kv_tokens_per_running_req_p50": 94400.0
+   },
+   "glm_v36_prev": {
+    "lines": 496,
+    "share_of_decode_lines": 0.0068,
+    "per_user_p50_all": 288.8,
+    "per_user_mean_all": 309.8,
+    "per_user_p10_all": 177.3,
+    "per_user_p90_all": 487.5,
+    "lines_clean": 395,
+    "per_user_p50_clean": 304.6,
+    "kv_tokens_per_running_req_p50": 74752.0
+   },
+   "ratio_dsv41_over_glm_v36_p50_all": 1.94,
+   "glm_day_to_day_change_p50_all": -0.087
+  },
+  "2-8": {
+   "dsv41": {
+    "lines": 117036,
+    "share_of_decode_lines": 0.6706,
+    "per_user_p50_all": 345.6,
+    "per_user_mean_all": 351.2,
+    "per_user_p10_all": 170.8,
+    "per_user_p90_all": 548.7,
+    "lines_clean": 55502,
+    "per_user_p50_clean": 448.8,
+    "kv_tokens_per_running_req_p50": 78022.0
+   },
+   "glm_v36": {
+    "lines": 34980,
+    "share_of_decode_lines": 0.4546,
+    "per_user_p50_all": 181.4,
+    "per_user_mean_all": 176.7,
+    "per_user_p10_all": 93.7,
+    "per_user_p90_all": 255.4,
+    "lines_clean": 17608,
+    "per_user_p50_clean": 215.3,
+    "kv_tokens_per_running_req_p50": 97291.0
+   },
+   "glm_v36_prev": {
+    "lines": 26572,
+    "share_of_decode_lines": 0.3649,
+    "per_user_p50_all": 173.2,
+    "per_user_mean_all": 168.3,
+    "per_user_p10_all": 91.1,
+    "per_user_p90_all": 238.1,
+    "lines_clean": 12475,
+    "per_user_p50_clean": 207.1,
+    "kv_tokens_per_running_req_p50": 90299.0
+   },
+   "ratio_dsv41_over_glm_v36_p50_all": 1.91,
+   "glm_day_to_day_change_p50_all": 0.047
+  },
+  "9-16": {
+   "dsv41": {
+    "lines": 3714,
+    "share_of_decode_lines": 0.0213,
+    "per_user_p50_all": 168.9,
+    "per_user_mean_all": 176.6,
+    "per_user_p10_all": 124.3,
+    "per_user_p90_all": 240.7,
+    "lines_clean": 214,
+    "per_user_p50_clean": 292.6,
+    "kv_tokens_per_running_req_p50": 86675.0
+   },
+   "glm_v36": {
+    "lines": 23932,
+    "share_of_decode_lines": 0.311,
+    "per_user_p50_all": 115.3,
+    "per_user_mean_all": 114.7,
+    "per_user_p10_all": 54.3,
+    "per_user_p90_all": 174.0,
+    "lines_clean": 5601,
+    "per_user_p50_clean": 170.7,
+    "kv_tokens_per_running_req_p50": 97447.0
+   },
+   "glm_v36_prev": {
+    "lines": 29700,
+    "share_of_decode_lines": 0.4078,
+    "per_user_p50_all": 117.2,
+    "per_user_mean_all": 116.2,
+    "per_user_p10_all": 55.9,
+    "per_user_p90_all": 174.8,
+    "lines_clean": 7377,
+    "per_user_p50_clean": 170.3,
+    "kv_tokens_per_running_req_p50": 90038.0
+   },
+   "ratio_dsv41_over_glm_v36_p50_all": 1.46,
+   "glm_day_to_day_change_p50_all": -0.016
+  },
+  "17-32": {
+   "dsv41": {
+    "lines": 54,
+    "share_of_decode_lines": 0.0003,
+    "per_user_p50_all": 138.4,
+    "per_user_mean_all": 138.9,
+    "per_user_p10_all": 111.0,
+    "per_user_p90_all": 171.8,
+    "lines_clean": 0,
+    "per_user_p50_clean": null,
+    "kv_tokens_per_running_req_p50": 72939.0
+   },
+   "glm_v36": {
+    "lines": 12661,
+    "share_of_decode_lines": 0.1645,
+    "per_user_p50_all": 76.1,
+    "per_user_mean_all": 77.5,
+    "per_user_p10_all": 28.1,
+    "per_user_p90_all": 125.4,
+    "lines_clean": 1122,
+    "per_user_p50_clean": 141.1,
+    "kv_tokens_per_running_req_p50": 95796.0
+   },
+   "glm_v36_prev": {
+    "lines": 14897,
+    "share_of_decode_lines": 0.2046,
+    "per_user_p50_all": 79.7,
+    "per_user_mean_all": 81.3,
+    "per_user_p10_all": 32.8,
+    "per_user_p90_all": 130.4,
+    "lines_clean": 1547,
+    "per_user_p50_clean": 142.8,
+    "kv_tokens_per_running_req_p50": 86150.0
+   },
+   "ratio_dsv41_over_glm_v36_p50_all": 1.82,
+   "glm_day_to_day_change_p50_all": -0.045
+  },
+  "33-64": {
+   "dsv41": {
+    "lines": 0,
+    "share_of_decode_lines": 0.0,
+    "per_user_p50_all": null,
+    "per_user_mean_all": null,
+    "per_user_p10_all": null,
+    "per_user_p90_all": null,
+    "lines_clean": 0,
+    "per_user_p50_clean": null,
+    "kv_tokens_per_running_req_p50": null
+   },
+   "glm_v36": {
+    "lines": 1440,
+    "share_of_decode_lines": 0.0187,
+    "per_user_p50_all": 44.2,
+    "per_user_mean_all": 48.3,
+    "per_user_p10_all": 18.6,
+    "per_user_p90_all": 86.7,
+    "lines_clean": 40,
+    "per_user_p50_clean": 115.9,
+    "kv_tokens_per_running_req_p50": 88039.0
+   },
+   "glm_v36_prev": {
+    "lines": 1159,
+    "share_of_decode_lines": 0.0159,
+    "per_user_p50_all": 53.6,
+    "per_user_mean_all": 56.2,
+    "per_user_p10_all": 20.9,
+    "per_user_p90_all": 96.4,
+    "lines_clean": 53,
+    "per_user_p50_clean": 117.3,
+    "kv_tokens_per_running_req_p50": 75152.0
+   },
+   "ratio_dsv41_over_glm_v36_p50_all": null,
+   "glm_day_to_day_change_p50_all": -0.175
+  }
+ },
+ "2_ttft_s": {
+  "dsv41": {
+   "n": 107279,
+   "mean": 0.71796,
+   "p50": 0.393,
+   "p90": 1.446,
+   "p99": 5.986,
+   "p90_bucket": [
+    1.0,
+    2.0
+   ],
+   "p99_bucket": [
+    4.0,
+    6.0
+   ],
+   "six_hour_blocks": {
+    "0": {
+     "n": 28325,
+     "mean": 0.97168,
+     "p50": 0.457,
+     "p90": 1.943,
+     "p99": 7.905
+    },
+    "1": {
+     "n": 29752,
+     "mean": 0.6812,
+     "p50": 0.4,
+     "p90": 1.307,
+     "p99": 5.972
+    },
+    "2": {
+     "n": 24983,
+     "mean": 0.63514,
+     "p50": 0.381,
+     "p90": 1.409,
+     "p99": 3.969
+    },
+    "3": {
+     "n": 24219,
+     "mean": 0.5518,
+     "p50": 0.359,
+     "p90": 0.933,
+     "p99": 3.747
+    }
+   }
+  },
+  "glm_v36": {
+   "n": 121234,
+   "mean": 1.80686,
+   "p50": 0.986,
+   "p90": 4.028,
+   "p99": 14.655,
+   "p90_bucket": [
+    4.0,
+    6.0
+   ],
+   "p99_bucket": [
+    10.0,
+    20.0
+   ],
+   "six_hour_blocks": {
+    "0": {
+     "n": 35434,
+     "mean": 2.21521,
+     "p50": 1.392,
+     "p90": 5.318,
+     "p99": 15.891
+    },
+    "1": {
+     "n": 34922,
+     "mean": 2.39683,
+     "p50": 1.483,
+     "p90": 5.852,
+     "p99": 17.544
+    },
+    "2": {
+     "n": 24493,
+     "mean": 1.09446,
+     "p50": 0.719,
+     "p90": 1.948,
+     "p99": 7.848
+    },
+    "3": {
+     "n": 26385,
+     "mean": 1.13893,
+     "p50": 0.745,
+     "p90": 2.293,
+     "p99": 7.565
+    }
+   }
+  },
+  "glm_v36_prev": {
+   "n": 130274,
+   "mean": 1.57791,
+   "p50": 0.899,
+   "p90": 3.661,
+   "p99": 11.251,
+   "p90_bucket": [
+    2.0,
+    4.0
+   ],
+   "p99_bucket": [
+    10.0,
+    20.0
+   ],
+   "six_hour_blocks": {
+    "0": {
+     "n": 37805,
+     "mean": 2.02926,
+     "p50": 1.3,
+     "p90": 4.713,
+     "p99": 14.865
+    },
+    "1": {
+     "n": 32119,
+     "mean": 1.54078,
+     "p50": 0.848,
+     "p90": 3.646,
+     "p99": 10.852
+    },
+    "2": {
+     "n": 27386,
+     "mean": 1.07858,
+     "p50": 0.691,
+     "p90": 1.967,
+     "p99": 8.129
+    },
+    "3": {
+     "n": 32964,
+     "mean": 1.51128,
+     "p50": 0.903,
+     "p90": 3.482,
+     "p99": 9.918
+    }
+   }
+  }
+ },
+ "2b_queue_time_s": {
+  "dsv41": {
+   "n": 430540,
+   "mean": 0.25909,
+   "p50": 0.005,
+   "p90": 0.37,
+   "p99": 4.833
+  },
+  "glm_v36": {
+   "n": 485060,
+   "mean": 0.61686,
+   "p50": 0.008,
+   "p90": 1.783,
+   "p99": 9.789
+  },
+  "glm_v36_prev": {
+   "n": 521116,
+   "mean": 0.49025,
+   "p50": 0.008,
+   "p90": 0.99,
+   "p99": 9.189
+  }
+ },
+ "2c_e2e_latency_s": {
+  "dsv41": {
+   "n": 107289,
+   "mean": 2.87188,
+   "p50": 1.481,
+   "p90": 6.372,
+   "p99": 27.076
+  },
+  "glm_v36": {
+   "n": 121241,
+   "mean": 11.29495,
+   "p50": 3.941,
+   "p90": 27.831,
+   "p99": 131.795
+  },
+  "glm_v36_prev": {
+   "n": 130266,
+   "mean": 10.66832,
+   "p50": 3.904,
+   "p90": 25.795,
+   "p99": 114.225
+  }
+ },
+ "2d_inter_token_latency_s": {
+  "dsv41": {
+   "n": 70799533,
+   "mean": 0.00325,
+   "p50": 0.002,
+   "p90": 0.005,
+   "p99": 0.029
+  },
+  "glm_v36": {
+   "n": 89103014,
+   "mean": 0.0129,
+   "p50": 0.003,
+   "p90": 0.018,
+   "p99": 0.223
+  },
+  "glm_v36_prev": {
+   "n": 97770386,
+   "mean": 0.01212,
+   "p50": 0.004,
+   "p90": 0.018,
+   "p99": 0.195
+  }
+ },
+ "3_prefill_full_chunks_tok_s": {
+  "dsv41": {
+   "protocol_all_full_chunks": {
+    "n": 35325,
+    "mean": 13748.0,
+    "p10": 5388.0,
+    "p50": 14139.0,
+    "p90": 20398.0,
+    "p99": 25315.0,
+    "max": 27104.0,
+    "min": 136.0
+   },
+   "with_requests_decoding": {
+    "n": 30278,
+    "mean": 12826.0,
+    "p10": 6135.0,
+    "p50": 13919.0,
+    "p90": 16053.0,
+    "p99": 16529.0,
+    "max": 17225.0,
+    "min": 157.0
+   },
+   "no_request_decoding": {
+    "n": 5047,
+    "mean": 19279.0,
+    "p10": 3093.0,
+    "p50": 24506.0,
+    "p90": 25242.0,
+    "p99": 25793.0,
+    "max": 27104.0,
+    "min": 136.0
+   },
+   "pure_prefill_consecutive_full_chunks_nothing_decoding": {
+    "n": 3481,
+    "mean": 24522.0,
+    "p10": 23450.0,
+    "p50": 24836.0,
+    "p90": 25316.0,
+    "p99": 25932.0,
+    "max": 27104.0,
+    "min": 13340.0
+   },
+   "prefill_lines": 127722,
+   "new_tokens": 261571316
+  },
+  "glm_v36": {
+   "protocol_all_full_chunks": {
+    "n": 93764,
+    "mean": 16737.0,
+    "p10": 13868.0,
+    "p50": 17723.0,
+    "p90": 19542.0,
+    "p99": 20451.0,
+    "max": 23546.0,
+    "min": 149.0
+   },
+   "with_requests_decoding": {
+    "n": 93524,
+    "mean": 16735.0,
+    "p10": 13878.0,
+    "p50": 17720.0,
+    "p90": 19533.0,
+    "p99": 20405.0,
+    "max": 21571.0,
+    "min": 149.0
+   },
+   "no_request_decoding": {
+    "n": 240,
+    "mean": 17285.0,
+    "p10": 2488.0,
+    "p50": 21044.0,
+    "p90": 22994.0,
+    "p99": 23273.0,
+    "max": 23546.0,
+    "min": 261.0
+   },
+   "pure_prefill_consecutive_full_chunks_nothing_decoding": {
+    "n": 184,
+    "mean": 21522.0,
+    "p10": 19502.0,
+    "p50": 21991.0,
+    "p90": 23064.0,
+    "p99": 23293.0,
+    "max": 23546.0,
+    "min": 12473.0
+   },
+   "prefill_lines": 187602,
+   "new_tokens": 463945920
+  },
+  "glm_v36_prev": {
+   "protocol_all_full_chunks": {
+    "n": 88947,
+    "mean": 17117.0,
+    "p10": 14669.0,
+    "p50": 18149.0,
+    "p90": 19592.0,
+    "p99": 20312.0,
+    "max": 22802.0,
+    "min": 307.0
+   },
+   "with_requests_decoding": {
+    "n": 88846,
+    "mean": 17114.0,
+    "p10": 14668.0,
+    "p50": 18146.0,
+    "p90": 19589.0,
+    "p99": 20297.0,
+    "max": 21099.0,
+    "min": 307.0
+   },
+   "no_request_decoding": {
+    "n": 101,
+    "mean": 19224.0,
+    "p10": 16123.0,
+    "p50": 20574.0,
+    "p90": 21998.0,
+    "p99": 22616.0,
+    "max": 22802.0,
+    "min": 943.0
+   },
+   "pure_prefill_consecutive_full_chunks_nothing_decoding": {
+    "n": 93,
+    "mean": 20408.0,
+    "p10": 18967.0,
+    "p50": 20672.0,
+    "p90": 22008.0,
+    "p99": 22631.0,
+    "max": 22802.0,
+    "min": 7401.0
+   },
+   "prefill_lines": 191832,
+   "new_tokens": 448698688
+  }
+ },
+ "4_speculation": {
+  "1": {
+   "dsv41": {
+    "accept_len_mean": 3.9,
+    "accept_rate_mean": 0.579,
+    "lines": 53731
+   },
+   "glm_v36": {
+    "accept_len_mean": 2.9,
+    "accept_rate_mean": 0.632,
+    "lines": 3938
+   },
+   "glm_v36_prev": {
+    "accept_len_mean": 2.93,
+    "accept_rate_mean": 0.643,
+    "lines": 496
+   }
+  },
+  "2-8": {
+   "dsv41": {
+    "accept_len_mean": 3.71,
+    "accept_rate_mean": 0.541,
+    "lines": 117036
+   },
+   "glm_v36": {
+    "accept_len_mean": 2.83,
+    "accept_rate_mean": 0.61,
+    "lines": 34980
+   },
+   "glm_v36_prev": {
+    "accept_len_mean": 2.82,
+    "accept_rate_mean": 0.608,
+    "lines": 26572
+   }
+  },
+  "9-16": {
+   "dsv41": {
+    "accept_len_mean": 3.61,
+    "accept_rate_mean": 0.522,
+    "lines": 3714
+   },
+   "glm_v36": {
+    "accept_len_mean": 2.81,
+    "accept_rate_mean": 0.602,
+    "lines": 23932
+   },
+   "glm_v36_prev": {
+    "accept_len_mean": 2.83,
+    "accept_rate_mean": 0.609,
+    "lines": 29700
+   }
+  },
+  "17-32": {
+   "dsv41": {
+    "accept_len_mean": 3.69,
+    "accept_rate_mean": 0.538,
+    "lines": 54
+   },
+   "glm_v36": {
+    "accept_len_mean": 2.81,
+    "accept_rate_mean": 0.603,
+    "lines": 12661
+   },
+   "glm_v36_prev": {
+    "accept_len_mean": 2.81,
+    "accept_rate_mean": 0.602,
+    "lines": 14897
+   }
+  },
+  "33-64": {
+   "dsv41": {
+    "accept_len_mean": null,
+    "accept_rate_mean": null,
+    "lines": 0
+   },
+   "glm_v36": {
+    "accept_len_mean": 2.68,
+    "accept_rate_mean": 0.617,
+    "lines": 1440
+   },
+   "glm_v36_prev": {
+    "accept_len_mean": 2.75,
+    "accept_rate_mean": 0.633,
+    "lines": 1159
+   }
+  }
+ },
+ "5_traffic_cache_concurrency": {
+  "dsv41": {
+   "hours": 23.509,
+   "requests": 107289,
+   "requests_per_hour": 4563.7,
+   "prompt_tokens": 7857049220,
+   "cached_tokens": 7598764032,
+   "uncached_prompt_tokens": 258285188,
+   "generation_tokens": 71165599,
+   "prompt_tokens_per_hour": 334208205,
+   "uncached_tokens_per_hour": 10986444,
+   "generation_tokens_per_hour": 3027107,
+   "cache_hit": 0.9671,
+   "aborted_requests": 59,
+   "evicted_tokens": 1036314624,
+   "running_req_max_in_logs": 20,
+   "running_req_at_5min_snapshots": {
+    "n": 285,
+    "mean": 2.807,
+    "p10": 0.0,
+    "p50": 2.0,
+    "p90": 6.6,
+    "p99": 11.16,
+    "max": 12.0,
+    "min": 0.0
+   },
+   "queue_req_max_in_logs": 26,
+   "snapshots_with_queue": 56,
+   "snapshots": 285,
+   "decode_lines_with_queue_and_free_slots": 17840,
+   "decode_lines": 174535,
+   "littles_law_mean_in_system": 3.64
+  },
+  "glm_v36": {
+   "hours": 23.946,
+   "requests": 121241,
+   "requests_per_hour": 5063.1,
+   "prompt_tokens": 11640668906,
+   "cached_tokens": 11181624896,
+   "uncached_prompt_tokens": 459044010,
+   "generation_tokens": 89352081,
+   "prompt_tokens_per_hour": 486125028,
+   "uncached_tokens_per_hour": 19170100,
+   "generation_tokens_per_hour": 3731425,
+   "cache_hit": 0.9606,
+   "aborted_requests": 214,
+   "evicted_tokens": 1618377216,
+   "running_req_max_in_logs": 55,
+   "running_req_at_5min_snapshots": {
+    "n": 288,
+    "mean": 13.399,
+    "p10": 3.0,
+    "p50": 11.0,
+    "p90": 27.3,
+    "p99": 40.39,
+    "max": 48.0,
+    "min": 0.0
+   },
+   "queue_req_max_in_logs": 32,
+   "snapshots_with_queue": 95,
+   "snapshots": 288,
+   "decode_lines_with_queue_and_free_slots": 4066,
+   "decode_lines": 76951,
+   "littles_law_mean_in_system": 15.89
+  },
+  "glm_v36_prev": {
+   "hours": 23.867,
+   "requests": 130266,
+   "requests_per_hour": 5458.0,
+   "prompt_tokens": 11848976582,
+   "cached_tokens": 11407569856,
+   "uncached_prompt_tokens": 441406726,
+   "generation_tokens": 97953825,
+   "prompt_tokens_per_hour": 496459721,
+   "uncached_tokens_per_hour": 18494480,
+   "generation_tokens_per_hour": 4104163,
+   "cache_hit": 0.9627,
+   "aborted_requests": 208,
+   "evicted_tokens": 1506892288,
+   "running_req_max_in_logs": 54,
+   "running_req_at_5min_snapshots": {
+    "n": 286,
+    "mean": 14.231,
+    "p10": 5.0,
+    "p50": 13.0,
+    "p90": 25.0,
+    "p99": 34.45,
+    "max": 42.0,
+    "min": 2.0
+   },
+   "queue_req_max_in_logs": 30,
+   "snapshots_with_queue": 82,
+   "snapshots": 286,
+   "decode_lines_with_queue_and_free_slots": 3928,
+   "decode_lines": 72824,
+   "littles_law_mean_in_system": 16.17
+  }
+ },
+ "6_errors": {
+  "dsv41": {
+   "chat_completions_by_status": {
+    "POST /v1/chat/completions 200": 107514,
+    "POST /v1/chat/completions 400": 6,
+    "POST /v1/chat/completions 401": 1
+   },
+   "chat_non200_events": [
+    [
+     "2026-10-17 14:44:36",
+     "400"
+    ],
+    [
+     "2026-10-17 14:44:48",
+     "400"
+    ],
+    [
+     "2026-10-17 14:44:53",
+     "400"
+    ],
+    [
+     "2026-10-17 14:44:57",
+     "400"
+    ],
+    [
+     "2026-10-17 14:45:02",
+     "400"
+    ],
+    [
+     "2026-10-17 15:46:01",
+     "400"
+    ],
+    [
+     "2026-10-18 09:53:35",
+     "401"
+    ]
+   ],
+   "non200_other_paths": {
+    "GET /v1/models 401": 4701,
+    "GET /v1 401": 2,
+    "GET /v1/health 404": 1,
+    "GET /v1/v1/models 404": 1,
+    "GET /ping 401": 1,
+    "GET /v1/health 401": 1,
+    "GET / 401": 1,
+    "GET /favicon.ico 401": 1,
+    "GET /version 404": 2,
+    "GET /v1/version 404": 1,
+    "GET /get_server_info 401": 3,
+    "GET /v1/internal/model_info 404": 1
+   },
+   "log_categories": {
+    "traceback": 0,
+    "out_of_memory": 0,
+    "cuda_error": 0,
+    "sigterm_received": 0,
+    "sigquit_received": 0,
+    "subprocess_crashed": 0,
+    "health_check_failed": 1,
+    "prompt_over_context_warning": 1,
+    "invalid_image_input": 1,
+    "error_response_path_warning": 4,
+    "retract": 0,
+    "server_fired_up": 2
+   },
+   "exception_classes": {},
+   "events": [
+    [
+     "2026-10-17 11:21:07",
+     "health_check_failed"
+    ],
+    [
+     "2026-10-17 17:40:01",
+     "server_fired_up"
+    ],
+    [
+     "2026-10-17 18:08:14",
+     "server_fired_up"
+    ]
+   ],
+   "aborted_requests_counter": 59,
+   "retracted_max_at_snapshots": 0.0,
+   "tunnel_request_failures": {
+    "outside_gaps": {
+     "Incoming request ended abruptly: context canceled": 21,
+     "stream N canceled by remote with error code 0": 47
+    },
+    "inside_gaps": {
+     "Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: read tcp ADDR->ADDR: read: connection reset by peer": 4,
+     "Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp ADDR: connect: connection refused": 354,
+     "stream N canceled by remote with error code 0": 1,
+     "unexpected EOF": 6,
+     "Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: EOF": 4,
+     "Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: readfrom tcp ADDR->ADDR: write tcp ADDR->ADDR: write: connection reset by peer": 1
+    }
+   }
+  },
+  "glm_v36": {
+   "chat_completions_by_status": {
+    "POST /v1/chat/completions 200": 120108,
+    "POST /v1/chat/completions 401": 13
+   },
+   "chat_non200_events": [
+    [
+     "2026-10-16 13:30:40",
+     "401"
+    ],
+    [
+     "2026-10-16 13:33:41",
+     "401"
+    ],
+    [
+     "2026-10-16 13:36:41",
+     "401"
+    ],
+    [
+     "2026-10-16 14:17:53",
+     "401"
+    ],
+    [
+     "2026-10-16 14:19:36",
+     "401"
+    ],
+    [
+     "2026-10-16 14:21:43",
+     "401"
+    ],
+    [
+     "2026-10-16 14:24:24",
+     "401"
+    ],
+    [
+     "2026-10-16 14:26:38",
+     "401"
+    ],
+    [
+     "2026-10-16 15:03:24",
+     "401"
+    ],
+    [
+     "2026-10-16 16:29:04",
+     "401"
+    ],
+    [
+     "2026-10-16 17:14:22",
+     "401"
+    ],
+    [
+     "2026-10-16 17:53:19",
+     "401"
+    ],
+    [
+     "2026-10-16 18:30:45",
+     "401"
+    ]
+   ],
+   "non200_other_paths": {
+    "GET /v1/models 401": 2741,
+    "GET /v1/health 404": 1,
+    "GET /v1/v1/models 404": 1,
+    "POST /v1/responses/input_tokens 405": 1
+   },
+   "log_categories": {
+    "traceback": 0,
+    "out_of_memory": 0,
+    "cuda_error": 0,
+    "sigterm_received": 0,
+    "sigquit_received": 0,
+    "subprocess_crashed": 0,
+    "health_check_failed": 0,
+    "prompt_over_context_warning": 0,
+    "invalid_image_input": 0,
+    "error_response_path_warning": 13,
+    "retract": 0,
+    "server_fired_up": 0
+   },
+   "exception_classes": {},
+   "events": [],
+   "aborted_requests_counter": 214,
+   "retracted_max_at_snapshots": 0.0,
+   "tunnel_request_failures": {
+    "outside_gaps": {
+     "stream N canceled by remote with error code 0": 83,
+     "Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: readfrom tcp ADDR->ADDR: write tcp ADDR->ADDR: use of closed network connection": 36,
+     "Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: read tcp ADDR->ADDR: read: connection reset by peer": 70,
+     "Incoming request ended abruptly: context canceled": 48,
+     "Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: readfrom tcp ADDR->ADDR: write tcp ADDR->ADDR: write: connection reset by peer": 1
+    },
+    "inside_gaps": {}
+   }
+  },
+  "glm_v36_prev": {
+   "chat_completions_by_status": {
+    "POST /v1/chat/completions 200": 129216,
+    "POST /v1/chat/completions 401": 2
+   },
+   "chat_non200_events": [
+    [
+     "2026-10-15 17:23:23",
+     "401"
+    ],
+    [
+     "2026-10-15 23:39:33",
+     "401"
+    ]
+   ],
+   "non200_other_paths": {
+    "GET /v1/models 401": 2636,
+    "GET /v1/health 404": 5,
+    "GET /v1/v1/models 404": 5,
+    "HEAD / 401": 2,
+    "GET / 401": 1,
+    "CONNECT / 401": 3,
+    "POST /v1/responses/input_tokens 405": 2
+   },
+   "log_categories": {
+    "traceback": 0,
+    "out_of_memory": 0,
+    "cuda_error": 0,
+    "sigterm_received": 0,
+    "sigquit_received": 0,
+    "subprocess_crashed": 0,
+    "health_check_failed": 0,
+    "prompt_over_context_warning": 0,
+    "invalid_image_input": 0,
+    "error_response_path_warning": 16,
+    "retract": 0,
+    "server_fired_up": 0
+   },
+   "exception_classes": {},
+   "events": [],
+   "aborted_requests_counter": 208,
+   "retracted_max_at_snapshots": 0.0,
+   "tunnel_request_failures": {
+    "outside_gaps": {
+     "Incoming request ended abruptly: context canceled": 84,
+     "Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: read tcp ADDR->ADDR: read: connection reset by peer": 83,
+     "stream N canceled by remote with error code 0": 59,
+     "Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: readfrom tcp ADDR->ADDR: write tcp ADDR->ADDR: write: connection reset by peer": 4,
+     "Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: readfrom tcp ADDR->ADDR: write tcp ADDR->ADDR: use of closed network connection": 41,
+     "Application error 0x0 (local)": 3,
+     "Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: readfrom tcp ADDR->ADDR: write tcp ADDR->ADDR: write: broken pipe": 1,
+     "timeout: no recent network activity": 6
+    },
+    "inside_gaps": {}
+   }
+  }
+ },
+ "7_memory": {
+  "dsv41": {
+   "gpu_free_gib": [
+    {
+     "n": 285,
+     "mean": 6.37,
+     "p10": 5.03,
+     "p50": 6.35,
+     "p90": 6.81,
+     "p99": 10.49,
+     "max": 38.56,
+     "min": 5.01,
+     "min_at": "2026-10-17T17:22:42Z"
+    },
+    {
+     "n": 285,
+     "mean": 6.37,
+     "p10": 5.03,
+     "p50": 6.35,
+     "p90": 6.81,
+     "p99": 10.49,
+     "max": 38.56,
+     "min": 5.01,
+     "min_at": "2026-10-17T17:22:42Z"
+    },
+    {
+     "n": 285,
+     "mean": 6.37,
+     "p10": 5.03,
+     "p50": 6.35,
+     "p90": 6.81,
+     "p99": 10.49,
+     "max": 38.56,
+     "min": 5.01,
+     "min_at": "2026-10-17T17:22:42Z"
+    },
+    {
+     "n": 285,
+     "mean": 6.37,
+     "p10": 5.03,
+     "p50": 6.35,
+     "p90": 6.81,
+     "p99": 10.49,
+     "max": 38.56,
+     "min": 5.01,
+     "min_at": "2026-10-17T17:22:42Z"
+    }
+   ],
+   "kv": {
+    "kv_used_tokens": {
+     "n": 285,
+     "mean": 241167.27,
+     "p10": 307.2,
+     "p50": 179968.0,
+     "p90": 528332.8,
+     "p99": 1185894.4,
+     "max": 1572608.0,
+     "min": 0.0
+    },
+    "kv_evictable_tokens": {
+     "n": 285,
+     "mean": 18629188.267,
+     "p10": 18052710.4,
+     "p50": 19805696.0,
+     "p90": 19995648.0,
+     "p99": 19998464.0,
+     "max": 20017408.0,
+     "min": 67072.0
+    },
+    "kv_available_tokens": {
+     "n": 285,
+     "mean": 1133800.646,
+     "p10": 768.0,
+     "p50": 2304.0,
+     "p90": 1562470.4,
+     "p99": 18214615.04,
+     "max": 19880704.0,
+     "min": 256.0
+    },
+    "token_usage": {
+     "n": 285,
+     "mean": 0.012,
+     "p10": 0.0,
+     "p50": 0.01,
+     "p90": 0.03,
+     "p99": 0.06,
+     "max": 0.08,
+     "min": 0.0
+    }
+   },
+   "evicted_tokens": 1036314624,
+   "pools_in_decode_lines": {
+    "full token usage": {
+     "n": 174535,
+     "mean": 0.011,
+     "p10": 0.0,
+     "p50": 0.01,
+     "p90": 0.02,
+     "p99": 0.05,
+     "max": 0.11,
+     "min": 0.0
+    },
+    "swa token usage": {
+     "n": 174535,
+     "mean": 0.0,
+     "p10": 0.0,
+     "p50": 0.0,
+     "p90": 0.0,
+     "p99": 0.0,
+     "max": 0.01,
+     "min": 0.0
+    },
+    "#full token": {
+     "n": 174535,
+     "mean": 230157.673,
+     "p10": 39680.0,
+     "p50": 170752.0,
+     "p90": 483072.0,
+     "p99": 1050024.96,
+     "max": 2213120.0,
+     "min": 0.0
+    },
+    "#swa token": {
+     "n": 174535,
+     "mean": 2073.592,
+     "p10": 768.0,
+     "p50": 1536.0,
+     "p90": 3840.0,
+     "p99": 7936.0,
+     "max": 16128.0,
+     "min": 0.0
+    }
+   },
+   "gpu_free_plateau_gib": {
+    "segment_2026-10-17_11:21-17:23": 5.01,
+    "segment_17:40-18:03": 8.4,
+    "segment_18:08-11:21": 6.35,
+    "note": "gpu_free_timeline.py: ~38.6 GiB right after boot, plateau reached within the first hour of traffic, flat to 0.02 GiB afterwards; identical on the four GPUs"
+   }
+  },
+  "glm_v36": {
+   "gpu_free_gib": [
+    {
+     "n": 288,
+     "mean": 11.01,
+     "p10": 10.82,
+     "p50": 10.82,
+     "p90": 11.5,
+     "p99": 11.5,
+     "max": 11.5,
+     "min": 10.82,
+     "min_at": "2026-10-16T17:56:29Z"
+    },
+    {
+     "n": 288,
+     "mean": 11.92,
+     "p10": 11.73,
+     "p50": 11.73,
+     "p90": 12.41,
+     "p99": 12.41,
+     "max": 12.41,
+     "min": 11.73,
+     "min_at": "2026-10-16T17:56:29Z"
+    },
+    {
+     "n": 288,
+     "mean": 11.92,
+     "p10": 11.73,
+     "p50": 11.73,
+     "p90": 12.41,
+     "p99": 12.41,
+     "max": 12.41,
+     "min": 11.73,
+     "min_at": "2026-10-16T17:56:29Z"
+    },
+    {
+     "n": 288,
+     "mean": 12.23,
+     "p10": 12.05,
+     "p50": 12.05,
+     "p90": 12.72,
+     "p99": 12.73,
+     "max": 12.73,
+     "min": 12.05,
+     "min_at": "2026-10-17T10:47:34Z"
+    }
+   ],
+   "kv": {
+    "kv_used_tokens": {
+     "n": 288,
+     "mean": 1339978.667,
+     "p10": 370816.0,
+     "p50": 1127872.0,
+     "p90": 2613804.8,
+     "p99": 3648536.96,
+     "max": 4550656.0,
+     "min": 0.0
+    },
+    "kv_evictable_tokens": {
+     "n": 288,
+     "mean": 7428584.0,
+     "p10": 6153350.4,
+     "p50": 7641280.0,
+     "p90": 8398502.4,
+     "p99": 8722960.64,
+     "max": 8771520.0,
+     "min": 4218560.0
+    },
+    "kv_available_tokens": {
+     "n": 288,
+     "mean": 3405.333,
+     "p10": 832.0,
+     "p50": 2752.0,
+     "p90": 5843.2,
+     "p99": 18568.96,
+     "max": 25408.0,
+     "min": 64.0
+    },
+    "token_usage": {
+     "n": 288,
+     "mean": 0.153,
+     "p10": 0.04,
+     "p50": 0.13,
+     "p90": 0.3,
+     "p99": 0.414,
+     "max": 0.52,
+     "min": 0.0
+    }
+   },
+   "evicted_tokens": 1618377216,
+   "pools_in_decode_lines": {
+    "full token usage": {
+     "n": 76951,
+     "mean": 0.114,
+     "p10": 0.02,
+     "p50": 0.09,
+     "p90": 0.24,
+     "p99": 0.38,
+     "max": 0.53,
+     "min": 0.0
+    },
+    "mamba usage": {
+     "n": 76951,
+     "mean": 0.06,
+     "p10": 0.01,
+     "p50": 0.05,
+     "p90": 0.13,
+     "p99": 0.2,
+     "max": 0.31,
+     "min": 0.0
+    },
+    "#full token": {
+     "n": 76951,
+     "mean": 1002817.1,
+     "p10": 194496.0,
+     "p50": 818880.0,
+     "p90": 2148288.0,
+     "p99": 3302592.0,
+     "max": 4650176.0,
+     "min": 0.0
+    }
+   }
+  },
+  "glm_v36_prev": {
+   "gpu_free_gib": [
+    {
+     "n": 286,
+     "mean": 11.53,
+     "p10": 11.5,
+     "p50": 11.5,
+     "p90": 11.65,
+     "p99": 11.74,
+     "max": 11.74,
+     "min": 11.5,
+     "min_at": "2026-10-15T18:29:30Z"
+    },
+    {
+     "n": 286,
+     "mean": 12.42,
+     "p10": 12.41,
+     "p50": 12.41,
+     "p90": 12.43,
+     "p99": 12.43,
+     "max": 12.43,
+     "min": 12.41,
+     "min_at": "2026-10-15T17:39:26Z"
+    },
+    {
+     "n": 286,
+     "mean": 12.42,
+     "p10": 12.41,
+     "p50": 12.41,
+     "p90": 12.43,
+     "p99": 12.43,
+     "max": 12.43,
+     "min": 12.41,
+     "min_at": "2026-10-15T18:29:30Z"
+    },
+    {
+     "n": 286,
+     "mean": 12.73,
+     "p10": 12.73,
+     "p50": 12.73,
+     "p90": 12.74,
+     "p99": 12.74,
+     "max": 12.74,
+     "min": 12.73,
+     "min_at": "2026-10-16T10:45:49Z"
+    }
+   ],
+   "kv": {
+    "kv_used_tokens": {
+     "n": 286,
+     "mean": 1288668.42,
+     "p10": 473952.0,
+     "p50": 1202688.0,
+     "p90": 2220832.0,
+     "p99": 2893484.8,
+     "max": 3804736.0,
+     "min": 127424.0
+    },
+    "kv_evictable_tokens": {
+     "n": 286,
+     "mean": 7479314.35,
+     "p10": 6548416.0,
+     "p50": 7565792.0,
+     "p90": 8296160.0,
+     "p99": 8598480.0,
+     "max": 8640576.0,
+     "min": 4963648.0
+    },
+    "kv_available_tokens": {
+     "n": 286,
+     "mean": 3985.231,
+     "p10": 896.0,
+     "p50": 2656.0,
+     "p90": 5824.0,
+     "p99": 32304.0,
+     "max": 104960.0,
+     "min": 64.0
+    },
+    "token_usage": {
+     "n": 286,
+     "mean": 0.147,
+     "p10": 0.05,
+     "p50": 0.14,
+     "p90": 0.25,
+     "p99": 0.326,
+     "max": 0.43,
+     "min": 0.01
+    }
+   },
+   "evicted_tokens": 1506892288,
+   "pools_in_decode_lines": {
+    "full token usage": {
+     "n": 72824,
+     "mean": 0.121,
+     "p10": 0.04,
+     "p50": 0.11,
+     "p90": 0.22,
+     "p99": 0.32,
+     "max": 0.46,
+     "min": 0.0
+    },
+    "mamba usage": {
+     "n": 72824,
+     "mean": 0.069,
+     "p10": 0.03,
+     "p50": 0.06,
+     "p90": 0.13,
+     "p99": 0.2,
+     "max": 0.3,
+     "min": 0.0
+    },
+    "#full token": {
+     "n": 72824,
+     "mean": 1058365.353,
+     "p10": 387264.0,
+     "p50": 923584.0,
+     "p90": 1948972.8,
+     "p99": 2819761.28,
+     "max": 4054528.0,
+     "min": 0.0
+    }
+   }
+  }
+ },
+ "internal_load": {
+  "dsv41_window": {
+   "internal-1": {
+    "requests": 959,
+    "per_hour": {
+     "2026-10-17T11": 2,
+     "2026-10-17T12": 143,
+     "2026-10-17T13": 343,
+     "2026-10-17T14": 387,
+     "2026-10-17T15": 32,
+     "2026-10-17T16": 39,
+     "2026-10-17T19": 9,
+     "2026-10-17T22": 3,
+     "2026-10-17T23": 1
+    },
+    "why": "our agent study runs, 2026-10-17 ~12:00-16:00 UTC"
+   },
+   "internal-2": {
+    "requests": 760,
+    "per_hour": {
+     "2026-10-17T17": 1,
+     "2026-10-17T18": 13,
+     "2026-10-17T19": 9,
+     "2026-10-17T20": 9,
+     "2026-10-17T21": 530,
+     "2026-10-17T22": 185,
+     "2026-10-17T23": 13
+    },
+    "why": "our agent study runs 21:14-21:48 UTC; same address as our 2026-10-18 study harness (first seen 11:31:34 UTC, after the window)"
+   },
+   "internal-3": {
+    "requests": 407,
+    "per_hour": {
+     "2026-10-17T19": 11,
+     "2026-10-17T21": 389,
+     "2026-10-17T23": 7
+    },
+    "why": "active only 19-23 UTC on 2026-10-17, 389 of its 407 requests at 21 UTC, during our agent study runs"
+   }
+  },
+  "total_requests": 2126,
+  "share_of_chat_requests": 0.0198,
+  "glm_windows": "none of these addresses (one request on 2026-10-15) and not the RTX bench address; unknown addresses cannot be ruled out"
+ },
+ "boot_facts_dsv41": {
+  "weights_per_gpu_gib": 74.5,
+  "dspark_head_per_gpu_gib": 2.14,
+  "pools_per_gpu_gib": 52.03,
+  "cuda_graphs_per_gpu_gib": 5.5,
+  "available_after_allocation_gib": [
+   41.03,
+   41.14,
+   41.22,
+   41.22
+  ],
+  "kv_pool_tokens": {
+   "10:51 boot": 20019200,
+   "11:16 boot": 20019200,
+   "17:36 boot": 19998976,
+   "18:04 boot": 19998976
+  },
+  "boot_launch_to_ready": {
+   "10:51:31 first (cold)": "16 min 46 s",
+   "11:16:12": "4 min 24 s",
+   "17:36:34": "3 min 27 s",
+   "18:04:54": "3 min 20 s"
+  },
+  "units": "SGLang logs 'GB' computed as bytes / 2**30 (GiB); total per GPU 183,359 MiB = 179.1 GiB"
+ }
+}

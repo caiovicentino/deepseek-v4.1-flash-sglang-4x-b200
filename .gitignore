@@ -1,0 +1,5 @@
+# local-only outputs of tools/measure24h (hashed client addresses can be reversed)
+tools/measure24h/known_clients.json
+tools/measure24h/internal_clients.json
+*_raw.json
+__pycache__/
